@@ -1,0 +1,70 @@
+// @import "fonts";
+
+.btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3.2px;
+  min-width: 186px;
+  min-height: 55px;
+  color: $white;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-size: 14px;
+  line-height: 1;
+  border: 0;
+  letter-spacing: 2px;
+  transition: 0.3s all;
+  font-family: "Schibsted Grotesk", sans-serif;
+  box-shadow: 0 8px 30px 0 rgba(242, 92, 48, .30);
+
+  @media($tablets) {
+    min-width: 150px;
+    min-height: 45px;
+    font-size: 12px;
+  }
+
+  @media($portrait-phones) {
+    min-width: 200px;
+    min-height: 55px;
+    font-size: 14px;
+  }
+
+  &:focus {
+    outline: 0;
+    box-shadow: none;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+    background: none;
+    border: 1px solid $white;
+    z-index: 0;
+
+    @media($tablets) {
+      top: 8px;
+      right: 8px;
+      bottom: 8px;
+      left: 8px;
+    }
+  }
+
+  &.btn-primary {
+    background-color: $clr-primary;
+    color: $white;
+
+    &:hover {
+      background-color: $clr-primary-hover;
+      color: $white;
+    }
+  }
+
+
+
+}

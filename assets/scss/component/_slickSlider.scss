@@ -1,0 +1,30 @@
+.slick-slider {
+  .slick-list {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+
+    .slick-track,
+    .slick-slide {
+      height: 100%;
+    }
+  }
+}
+
+.sliderArrows {
+  .slick-arrow {
+    margin-left: 15px;
+    font-size: 25px;
+    color: $clr-primary;
+    cursor: pointer;
+
+    &:first-child {
+      margin-left: 0px;
+    }
+
+    &.slick-disabled {
+      pointer-events: none;
+      color: rgba($black, 0.2);
+    }
+  }
+}
